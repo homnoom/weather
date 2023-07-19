@@ -16,7 +16,7 @@
   <div class="card">
 <div class="search">
 <input type="text" placeholder="enter city name" spellcheck="false">
-<button><img src="images/search.png"></button>
+<div><img src="images/search.png"></div>
 </div>
 <div class="weather">
   <img src="images/clear.svg" class="weather-icon">
@@ -26,13 +26,13 @@
 
     <div class="col1">
 <img src="images/humidity.png">
-<div>
+<div >
   <p class="humidity">50%</p>
   <p>Humidity</p>
 </div>
     </div>
 
-    <div class="col1">
+    <div class="col2">
       <img src="images/wind.png">
       <div>
         <p class="wind">15 km/h</p>
@@ -50,7 +50,7 @@
     const apiUrl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchBox = document.querySelector(".search input");
-const searchBtn = document.querySelector(".search button");
+const searchBtn = document.querySelector(".search img");
 const weatherIcon = document.querySelector(".weather-icon");
 const background = document.querySelector(".container");
 
